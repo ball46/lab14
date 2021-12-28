@@ -22,13 +22,13 @@ int main()
     return 0;
 }
 
-void updateImage(bool a[][M],int b,int c,int d){
-    for(;;){
-        double h = pow((),2);
-        double i = pow((),2);
-        double j = sqrt((h+i));
-        if(j <= (b-1)) a[c][d] = 1 ;
-        else a[c][d] = 0 ;
+void updateImage(bool d[N][M],int s,int x,int y){
+    for(int N=0;N<30;N++){
+        for(int M=0;M<70;M++){
+            if(sqrt(pow(N-x,2)+pow(M-y,2))<=s-1){
+                d[N][M]=1;
+            }
+        }
     }
 }
 
